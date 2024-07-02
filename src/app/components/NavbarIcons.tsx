@@ -4,10 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import CartModal from "./CartModal";
 
 const NavbarIcons = () => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
-  const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(true);
 
   const router = useRouter();
 
@@ -20,6 +21,12 @@ const NavbarIcons = () => {
     }
 
     setIsProfileOpen((prev) => !prev);
+    setIsCartOpen(false);
+  };
+
+  const handleCart = () => {
+    setIsCartOpen((prev) => !prev);
+    setIsProfileOpen(false);
   };
 
   return (
@@ -33,7 +40,8 @@ const NavbarIcons = () => {
       )}
       <Image src="/notification.png" height={22} width={22} alt="" className="cursor-pointer" />
       <div className="relative cursor-pointer">
-        <Image src="/cart.png" height={22} width={22} alt="" onClick={() => setIsCartOpen((prev) => !prev)} />
+        <Image src="/cart.png" height={22} width={22} alt="" onClick={handleCart} />
+        {isCartOpen && <CartModal />}
         <div className="absolute -top-4 -right-4 w-6 h-6 rounded-full flex items-center justify-center text-sm bg-rd text-white">
           2
         </div>
