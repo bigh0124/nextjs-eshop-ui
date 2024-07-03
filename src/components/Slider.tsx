@@ -40,7 +40,7 @@ const Slider = () => {
     }, 8000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [current]);
 
   const slidesContent = useMemo(
     () =>
