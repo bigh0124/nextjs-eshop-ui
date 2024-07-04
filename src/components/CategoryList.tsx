@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const CategoryList = () => {
   return (
-    <div className="px-4 overflow-x-scroll mt-4 scrollBar-hidden">
+    <div className="px-4 overflow-x-scroll mt-4 ">
       <div className="flex gap-4 md:gap-8">
         <Link href="/list?cat=test" className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6">
           <div className="relative w-full h-96 bg-slate-100">
