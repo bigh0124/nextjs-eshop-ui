@@ -8,12 +8,12 @@ const ProductList = () => {
         <div className="relative w-full h-80">
           <Image
             src="/product.jpg"
-            layout="fill"
+            fill
             objectPosition="center"
             alt=""
             className="absolute object-cover z-20 hover:opacity-0 transition-all duration-500 ease-in"
           />
-          <Image src="/product.png" layout="fill" objectPosition="center" alt="" className="absolute object-cover" />
+          <Image src="/product.png" fill objectPosition="center" alt="" className="absolute object-cover" />
         </div>
         <div className="flex items-center justify-between">
           <h3 className="font-medium">Product name</h3>
@@ -31,12 +31,12 @@ const ProductList = () => {
         <div className="relative w-full h-80">
           <Image
             src="/product.jpg"
-            layout="fill"
+            fill
             objectPosition="center"
             alt=""
             className="absolute object-cover z-20 hover:opacity-0 transition-all duration-500 ease-in"
           />
-          <Image src="/product.png" layout="fill" objectPosition="center" alt="" className="absolute object-cover" />
+          <Image src="/product.png" fill objectPosition="center" alt="" className="absolute object-cover" />
         </div>
         <div className="flex items-center justify-between">
           <h3 className="font-medium">Product name</h3>
@@ -54,12 +54,12 @@ const ProductList = () => {
         <div className="relative w-full h-80">
           <Image
             src="/product.jpg"
-            layout="fill"
+            fill
             objectPosition="center"
             alt=""
             className="absolute object-cover z-20 hover:opacity-0 transition-all duration-500 ease-in"
           />
-          <Image src="/product.png" layout="fill" objectPosition="center" alt="" className="absolute object-cover" />
+          <Image src="/product.png" fill objectPosition="center" alt="" className="absolute object-cover" />
         </div>
         <div className="flex items-center justify-between">
           <h3 className="font-medium">Product name</h3>
@@ -77,12 +77,12 @@ const ProductList = () => {
         <div className="relative w-full h-80">
           <Image
             src="/product.jpg"
-            layout="fill"
+            fill
             objectPosition="center"
             alt=""
             className="absolute object-cover z-20 hover:opacity-0 transition-all duration-500 ease-in"
           />
-          <Image src="/product.png" layout="fill" objectPosition="center" alt="" className="absolute object-cover" />
+          <Image src="/product.png" fill objectPosition="center" alt="" className="absolute object-cover" />
         </div>
         <div className="flex items-center justify-between">
           <h3 className="font-medium">Product name</h3>
