@@ -5,7 +5,7 @@ const CartModal = () => {
   let cartItems = true;
 
   return (
-    <div className="w-max flex flex-col absolute top-12 right-0 p-4 rounded-md shadow-md z-20">
+    <div className="w-max flex flex-col absolute top-12 right-0 p-4 rounded-md shadow-md z-20 bg-white">
       {!cartItems ? (
         <div className="text-center">Cart is Empty!</div>
       ) : (

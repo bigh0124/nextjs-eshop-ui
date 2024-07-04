@@ -33,7 +33,7 @@ const NavbarIcons = () => {
     <div className="flex items-center gap-4 xl:gap-6 relative">
       <Image src="/profile.png" height={22} width={22} alt="" className="cursor-pointer" onClick={handleProfile} />
       {isProfileOpen && (
-        <div className="absolute top-12 left-0 p-4 rounded-md text-sm shadow-md z-20">
+        <div className="absolute top-12 left-0 p-4 rounded-md text-sm shadow-md z-20 bg-white">
           <Link href="/profile">Profile</Link>
           <div className="mt-2 cursor-pointer">Logout</div>
         </div>
