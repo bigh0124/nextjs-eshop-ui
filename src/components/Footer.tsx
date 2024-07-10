@@ -41,7 +41,7 @@ const Footer = () => {
               </ul>
             </nav>
           </div>
-          <div className="hidden lg:flex flex-col gap-20 grow">
+          <div className="hidden xl:flex flex-col gap-20 grow">
             <h1 className="text-xl font-semibold">COMPANY</h1>
             <nav>
               <ul className="flex flex-col gap-4">
