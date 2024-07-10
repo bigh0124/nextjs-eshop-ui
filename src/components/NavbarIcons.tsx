@@ -39,10 +39,10 @@ const NavbarIcons = () => {
         </div>
       )}
       <Image src="/notification.png" height={22} width={22} alt="" className="cursor-pointer" />
-      <div className="relative cursor-pointer">
-        <Image src="/cart.png" height={22} width={22} alt="" onClick={handleCart} />
+      <div className="relative cursor-pointer" onClick={handleCart}>
+        <Image src="/cart.png" height={22} width={22} alt="" />
         {isCartOpen && <CartModal />}
-        <div className="absolute -top-4 -right-4 w-6 h-6 rounded-full flex items-center justify-center text-sm bg-rd text-white">
+        <div className="absolute -top-3 -right-3 w-5 h-5 rounded-full flex items-center justify-center text-sm bg-rd text-white">
           2
         </div>
       </div>
